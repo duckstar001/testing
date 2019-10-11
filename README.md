@@ -1,9 +1,7 @@
- New tutorial not using extension
-
 # Motion with the Microbit
 
 ## Introduction @unplugged
-Make things move using a servo. Boo!
+Make things move using a servo. Boo! 123
 
 ## Step 1
 
