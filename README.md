@@ -3,7 +3,7 @@
 # Motion with the Microbit
 
 ## Introduction @unplugged
-Make things move using a servo.
+Make things move using a servo. Boo!
 
 ## Step 1
 
