@@ -1,30 +1,51 @@
-# testing
+ New tutorial not using extension
 
+# Motion with the Microbit
 
+## Introduction @unplugged
+Make things move using a servo.
 
-## Usage
+## Step 1
 
-This repository contains a MakeCode extension. To use it in MakeCode,
+Today we are going to make things move using the Microbit. 
+We are going to connect a servo.
 
-* open https://makecode.microbit.org/
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for the URL of this repository
+## Step 3
 
-## Collaborators
+Add two ``||pins:servo write pin||`` blocks to the ``||basic:forever||`` block.  
+One should be set to 0 degrees and the other set to 180 degrees.  
+The blocks are the below the black Advanced tab. 
 
-You can invite users to become collaborators to this repository. This will allow multiple users to work on the same project at the same time.
-[Learn more...](https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository)
+```blocks
+basic.forever(function () {
+    pins.servoWritePin(AnalogPin.P0, 0)
+})
+```
 
-To edit this repository in MakeCode,
+## Step 4
 
-* open https://makecode.microbit.org/
-* click on **Import** then click on **Import URL**
-* paste the repository URL and click import
+Add two  ``||basic:pause||`` blocks to the ``||basic:forever||`` block.
 
-## Supported targets
+```blocks
+basic.forever(function () {
+    basic.pause(1000)
+})
+```
 
-* for PXT/microbit
-* for PXT/microbit
-(The metadata above is needed for package search.)
+## Step 5
+
+Your code should now look like this.
+
+```blocks
+basic.forever(function () {
+    pins.servoWritePin(AnalogPin.P0, 0)
+    basic.pause(1000)
+    pins.servoWritePin(AnalogPin.P0, 180)
+    basic.pause(1000)
+})
+```
+
+## Step 6 @unplugged
+
+Now tweak your code to get your servo moving how you would like. 
 
